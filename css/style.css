@@ -1,0 +1,183 @@
+:root{
+  box-sizing: border-box;
+  font-size: 1em;
+  /* COLOR */
+  --buttoncolor:hsl(322, 100%, 66%);
+  --hover-btn-state:hsl(321, 100%, 78%);
+  --icon-hov-state:hsl(207, 100%, 98%);
+  --Dark-cyan:hsl(192, 100%, 9%);
+  /* FONT */
+  --body-font:san-serif, 'Open sans';
+}
+
+*,
+::before,
+::after{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+body{
+  font-family:var(--body-font);
+  color:var(--Dark-cyan);
+}
+
+
+h1,h2,h3{
+  --heading-font:sans-serif, 'Poppins';
+  margin-bottom:1em;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+
+p{
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  color:var(--hover-btn-state);
+}
+
+img{
+  width:100%;
+}
+
+/* Navigation */
+#Nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 0 8em;
+  padding:2em;
+}
+
+.logo{
+  width:115px;
+}
+
+nav button{
+  background-color: transparent;
+  padding:0.4em 1.35em;
+  border:1px solid var(--hover-btn-state);
+  border-radius: 40px;
+}
+
+nav a{
+  font-size: 0.75rem;
+}
+
+/* Header */
+#Header{
+  text-align: center;
+  margin-bottom: 7.5em;
+  padding:2em;
+}
+
+#Header p{
+  margin-bottom: 3em;
+}
+
+button{
+  background-color:var(--buttoncolor);
+  border-width:1px;
+  border-style:none;
+  padding:0.9em 2em;
+  border-radius: 50px;
+  color:white;
+  font-weight: 700;
+}
+
+/* End of Header */
+
+/* MAIN */
+
+/* TOP - SECTION */
+.top-section{
+  padding:2em 2em 0;
+}
+
+.stats-cont{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-img{
+  margin-bottom: 7em;
+}
+
+.small-img{
+  width:25px;
+  text-align: left;
+}
+
+.figure{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.stat-text{
+  text-align:center;
+  color:grey;
+}
+
+.figure-cont{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:6em;
+}
+
+.marg-res{
+  margin-bottom: 0;
+}
+/* END OF TOP SECTION */
+
+
+/* MIDDLE SECTION */
+
+.middle-section{
+  text-align: center;
+}
+
+
+.illustrations{
+  width:80%;
+}
+
+section>article{
+  margin-bottom: 10em;
+}
+
+.illustration-cont{
+  margin-bottom: 4.5em;
+}
+
+.grow-arti{
+  background-image: url('../images/bg-section-top-mobile-1.svg'), url('../images/bg-section-bottom-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  /* background-size:cover; */
+}
+
+.grow-arti>div{
+  width: 75%;
+  margin: 0 auto;
+  padding:12em 0 7em;
+}
+
+
+/* END OF MIDDLE SECTION */
+
+
+.bottom-section{
+  text-align: center;
+  margin-bottom:10em;
+}
