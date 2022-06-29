@@ -163,7 +163,7 @@ section>article{
     background-image: url('../images/bg-section-top-mobile-1.svg'),url('../images/bg-section-bottom-mobile-1.svg');
     background-repeat: no-repeat;
     background-position: left top, left bottom;
-    background-size: 100% 150px;
+    background-size: 100%;
 }
 
 .grow-arti>div{
